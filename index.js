@@ -39,7 +39,7 @@ readXlsxFile(data_path).then((rows) => {
     data.push
 });
 app.get('/', (req, res) => {
-    print('request from: ', req.ip);
+    console.log('request from: ', req.ip);
     res.send('Food API');
 })
 
